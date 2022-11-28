@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+
+{% block title %}Editar{% endblock %}
+
+
+{% block contenido %}
+
+
+<form method="POST" class="m-5">
+
+    {{form.as_p}}
+    {% csrf_token %}
+    <button class="btn btn-success">
+        Editar
+    </button>
+
+</form>
+
+{% endblock contenido %}
+
+
+
+
